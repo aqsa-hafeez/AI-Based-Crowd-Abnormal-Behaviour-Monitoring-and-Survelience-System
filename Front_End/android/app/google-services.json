@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1076037914714",
+    "project_id": "surveilai",
+    "storage_bucket": "surveilai.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1076037914714:android:9a3457e966ca766fce4863",
+        "android_client_info": {
+          "package_name": "com.example.surveilai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiBsRyKSvtIH3nORCkJ-kiS10yDIV3Z5o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
