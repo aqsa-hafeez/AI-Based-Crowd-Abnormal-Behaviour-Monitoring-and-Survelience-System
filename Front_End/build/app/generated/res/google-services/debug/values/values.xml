@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="gcm_defaultSenderId" translatable="false">1076037914714</string>
-    <string name="google_api_key" translatable="false">AIzaSyDiBsRyKSvtIH3nORCkJ-kiS10yDIV3Z5o</string>
-    <string name="google_app_id" translatable="false">1:1076037914714:android:9a3457e966ca766fce4863</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDiBsRyKSvtIH3nORCkJ-kiS10yDIV3Z5o</string>
-    <string name="google_storage_bucket" translatable="false">surveilai.firebasestorage.app</string>
-    <string name="project_id" translatable="false">surveilai</string>
-</resources>
