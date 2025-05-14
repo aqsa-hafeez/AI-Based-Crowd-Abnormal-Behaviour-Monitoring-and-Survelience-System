@@ -24,7 +24,7 @@ DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 GREEN, RED = (0, 255, 0), (0, 0, 255)
 FONT = cv2.FONT_HERSHEY_SIMPLEX
 
-gclient = genai.Client(api_key=os.getenv("GOOGLE_API_KEY"))
+gclient = genai.Client(api_key=os.getenv("API_KEY"))
 
 
 # ───────────────────────────────────────────────────────────── #
