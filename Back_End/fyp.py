@@ -28,7 +28,7 @@ EXT    = ".mp4"
 # ──────────────────────────────────────────────────────────────────────────────
 
 load_dotenv()
-API_KEY = os.getenv("GOOGLE_API_KEY")
+API_KEY = os.getenv("API_KEY")
 if not API_KEY:
     raise RuntimeError("Set GOOGLE_API_KEY in your .env")
 gclient = genai.Client(api_key=API_KEY)
