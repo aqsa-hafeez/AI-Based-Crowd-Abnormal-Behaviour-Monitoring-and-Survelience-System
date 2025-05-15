@@ -1,0 +1,19 @@
+# Python dependencies for the AI-based Crowd Abnormal Behavior Monitoring and Surveillance System
+
+# Core dependencies
+python==3.10.12
+opencv-python==4.10.0
+torch==2.4.0+cu121
+torchvision==0.19.0+cu121
+ultralytics==8.2.0  # For YOLOv8
+numpy>=1.24.0
+requests>=2.31.0
+
+# Google Gemini API
+google-generativeai==0.7.2  # For Gemini 2.0 Flash integration
+
+
+# Notes:
+# - Ensure CUDA 12.1 is installed for GPU support with PyTorch.
+# - RAFT model may require a custom implementation or pre-trained weights; check `local_host_processor/models/`.
+# - Google Gemini API requires an API key; configure in `scripts/gemini_config.py`.
