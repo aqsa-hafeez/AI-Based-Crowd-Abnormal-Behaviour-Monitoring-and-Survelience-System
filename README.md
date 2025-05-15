@@ -14,22 +14,6 @@ This repository contains the implementation of an **AI-based Crowd Abnormal Beha
 - **Offline Processing**: Backend processing runs on a local host, ensuring data privacy and functionality without internet dependency.
 - **Dataset**: Utilizes the **CampusVAD** dataset for training and evaluation, covering diverse crowd scenarios.
 
-## Project Structure
-```
-├── client_mobile_app/           # Flutter-based Android application
-│   ├── lib/                     # Flutter source code
-│   ├── android/                 # Android-specific configurations
-│   └── pubspec.yaml            # Flutter dependencies
-├── local_host_processor/        # Backend video processing pipeline
-│   ├── scripts/                 # Python scripts for YOLOv8, RAFT, and Gemini 2.0 Flash
-│   ├── models/                  # Pre-trained model weights
-│   └── requirements.txt         # Python dependencies
-├── docs/                        # Project documentation
-│   ├── BS_Final_Project_Document.pdf  # Full project report
-│   └── diagrams/                # UML diagrams (Use Case, Class, Sequence, etc.)
-├── dataset/                     # Sample data from CampusVAD (if included)
-└── README.md                    # This file
-```
 
 ## Installation
 ### Prerequisites
@@ -39,7 +23,7 @@ This repository contains the implementation of an **AI-based Crowd Abnormal Beha
 - **Local Host with GPU**: For video processing (recommended: NVIDIA GPU with CUDA support)
 - **Dependencies**:
   - Flutter: `flutter pub get`
-  - Python: `pip install -r local_host_processor/requirements.txt`
+  - Python: `pip install -r Back_end/requirements.txt`
 
 ### Setup
 1. **Clone the Repository**:
@@ -49,7 +33,7 @@ This repository contains the implementation of an **AI-based Crowd Abnormal Beha
    ```
 
 2. **Mobile App Setup**:
-   - Navigate to `client_mobile_app/`.
+   - Navigate to `Front_end/`.
    - Install Flutter dependencies:
      ```bash
      flutter pub get
@@ -61,21 +45,21 @@ This repository contains the implementation of an **AI-based Crowd Abnormal Beha
      ```
 
 3. **Backend Setup**:
-   - Navigate to `local_host_processor/`.
+   - Navigate to `Back_End/`.
    - Install Python dependencies:
      ```bash
      pip install -r requirements.txt
      ```
-   - Ensure pre-trained models (YOLOv8, RAFT) are placed in `local_host_processor/models/`.
-   - Configure the Google Gemini API key in the script (see `scripts/gemini_config.py`).
+   - Ensure pre-trained models (YOLOv8, RAFT) are placed in `Back_End/models/`.
+   - Configure the Google Gemini API key in the script
    - Run the backend server:
      ```bash
-     python scripts/main.py
+     unicorn fyp:app --host 0.0.0.0 --port 8000 --reload
      ```
 
 4. **Firebase Configuration**:
    - Set up a Firebase project and enable Authentication.
-   - Add the `google-services.json` file to `client_mobile_app/android/app/`.
+   - Add the `google-services.json` file to `Front_End/android/app/`.
    - Update Firebase rules to allow secure access.
 
 ## Usage
@@ -106,8 +90,6 @@ The system was rigorously tested, as detailed in the project report:
 - **Business Rules Testing**: Verified constraints like password policies and supported video formats.
 - **Integration Testing**: Confirmed seamless interaction between the mobile app and backend pipeline.
 
-All test cases passed, ensuring reliability and usability. Refer to `docs/BS_Final_Project_Document.pdf` for detailed test results.
-
 ## Dataset
 The system uses the **CampusVAD** dataset, which includes labeled crowd scenarios from transportation hubs, stadiums, and city squares. It supports semi-supervised learning with annotations for anomalies like sudden movements and aggressive actions. Due to size constraints, the dataset is not included in this repository but can be accessed [here](#) (replace with actual link if available).
 
@@ -122,10 +104,6 @@ The system uses the **CampusVAD** dataset, which includes labeled crowd scenario
 - **Muhammad Usama** (CIIT/FA21-BAI-061/ATK)
 - **Supervisor**: Dr. Muazzam Maqsood, Associate Professor, COMSATS University Islamabad, Attock Campus
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 We express gratitude to our supervisor, Dr. Muazzam Maqsood, and the faculty of the Department of Computer Science at COMSATS University Islamabad, Attock Campus, for their guidance and support. Special thanks to our families and friends for their encouragement.
-
-For detailed documentation, refer to `docs/BS_Final_Project_Document.pdf`.
