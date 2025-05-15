@@ -28,7 +28,7 @@ This repository contains the implementation of an **AI-based Crowd Abnormal Beha
 ### Setup
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/crowd-abnormal-behavior-monitoring.git
+   git clone https://github.com/aqsa-hafeez/AI-Based-Crowd-Abnormal-Behaviour-Monitoring-and-Survelience-System.git
    cd crowd-abnormal-behavior-monitoring
    ```
 
@@ -67,7 +67,7 @@ This repository contains the implementation of an **AI-based Crowd Abnormal Beha
 2. **Sign Up/Sign In**: Create an account or log in using your credentials.
 3. **Upload Video**: From the Home Page, select a video (MP4 or AVI) from your gallery.
 4. **View Results**: After processing, review the results, including:
-   - Original video with green (person) and red (abnormal) bounding boxes.
+   - Original video .
    - Clips of abnormal events.
    - Classification labels (e.g., "Sudden Movement").
    - Ground truth annotations (if available).
@@ -80,7 +80,7 @@ This repository contains the implementation of an **AI-based Crowd Abnormal Beha
 | OpenCV                  | 4.10.0        | Video frame handling                 |
 | PyTorch                 | 2.4.0+cu121   | Running YOLOv8 and RAFT models       |
 | Ultralytics YOLO        | YOLOv8       | Person detection                     |
-| RAFT Model              | RAFT-sintel   | Abnormality detection via optical flow |
+| RAFT Model              | RAFT-things   | Abnormality detection via optical flow |
 | Google Gemini API       | Gemini 2.0 Flash | Behavior classification            |
 
 ## Testing
@@ -91,7 +91,7 @@ The system was rigorously tested, as detailed in the project report:
 - **Integration Testing**: Confirmed seamless interaction between the mobile app and backend pipeline.
 
 ## Dataset
-The system uses the **CampusVAD** dataset, which includes labeled crowd scenarios from transportation hubs, stadiums, and city squares. It supports semi-supervised learning with annotations for anomalies like sudden movements and aggressive actions. Due to size constraints, the dataset is not included in this repository but can be accessed [here](#) (replace with actual link if available).
+The system uses the **CampusVAD** dataset, which includes labeled crowd scenarios from transportation hubs, stadiums, and city squares. It supports semi-supervised learning with annotations for anomalies like sudden movements and aggressive actions. Due to size constraints, the dataset is not included in this repository.
 
 ## Future Work
 - **Real-time Processing**: Optimize for live video streaming using frame subsampling and GPU acceleration.
