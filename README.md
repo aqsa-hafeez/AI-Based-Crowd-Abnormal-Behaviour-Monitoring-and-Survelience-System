@@ -99,11 +99,3 @@ The system uses the **CampusVAD** dataset, which includes labeled crowd scenario
 - **Edge Deployment**: Optimize models for resource-constrained devices using quantization and pruning.
 - **Enhanced UI**: Add interactive heatmaps and predictive analytics for better insights.
 
-## Contributors
-- **Aqsa Hafeez** (CIIT/FA21-BAI-031/ATK)
-- **Muhammad Usama** (CIIT/FA21-BAI-061/ATK)
-- **Supervisor**: Dr. Muazzam Maqsood, Associate Professor, COMSATS University Islamabad, Attock Campus
-
-
-## Acknowledgments
-We express gratitude to our supervisor, Dr. Muazzam Maqsood, and the faculty of the Department of Computer Science at COMSATS University Islamabad, Attock Campus, for their guidance and support. Special thanks to our families and friends for their encouragement.
